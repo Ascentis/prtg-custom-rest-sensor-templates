@@ -1,21 +1,21 @@
 {
-    "prtg": {
-        "description" : {
-            "device": "TrueNAS Appliance",
-            "query": "/api/v2.0/pool",
-            "comment": "Free space on each TrueNAS pool reported as a percentage"
-        },
-        "result": [
-			{                              
-                "value": {
-					$[#0].name : $[*].topology.data(100 * (sum(@[*].stats.size) - sum(@[*].stats.allocated)) / sum(@[*].stats.size)),				
+	"prtg": {
+		"description" : {
+			"device": "TrueNAS Appliance",
+			"query": "/api/v2.0/pool",
+			"comment": "Free space on each TrueNAS pool reported as a percentage"
+		},
+		"result": [
+			{
+				"value": {
+					$[#0].name : $[*].topology.data(100 * (sum(@[*].stats.size) - sum(@[*].stats.allocated)) / sum(@[*].stats.size)),
 				},				
 				"Unit": "Percent",
 				"Float": 1,
 				"LimitMode": 1,
 				"LimitMinWarning" : 10,
 				"LimitMinError": 5
-            }		
-        ]
-    }
+			}		
+		]
+	}
 }
