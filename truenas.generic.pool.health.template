@@ -1,0 +1,19 @@
+{
+    "prtg": {
+        "description" : {
+            "device": "TrueNAS Appliance",
+            "query": "/api/v2.0/pool",
+            "comment": "Pool health reported as percentage. Anything other than Healthy reported as 0% health"
+        },
+        "result": [
+			{                              
+                "value": {
+					$[#0].name : $[*](@.healthy ? 100 : 0)
+				},				
+				"Unit": "Percent",
+				"LimitMode": 1,
+				"LimitMinError": 0.05
+            }		
+        ]
+    }
+}

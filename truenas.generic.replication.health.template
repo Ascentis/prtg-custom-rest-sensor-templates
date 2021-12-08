@@ -1,0 +1,19 @@
+{
+    "prtg": {
+        "description" : {
+            "device": "TrueNAS Appliance",
+            "query": "/api/v2.0/replication",
+            "comment": "Replication status reported as an integer. 0: error, 1: running, 2: finished(OK)"
+        },
+        "result": [
+			{                              
+                "value": {
+					$[#0].name : $[*](lookup(@.state.state, "ERROR", "RUNNING", "FINISHED"))
+				},								
+				"CustomUnit": "Status",				
+				"LimitMode": 1,				
+				"LimitMinError": 0.05
+            }		
+        ]
+    }
+}
