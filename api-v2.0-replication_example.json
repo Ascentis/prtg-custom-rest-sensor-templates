@@ -1,0 +1,230 @@
+[
+ {
+  "id": 1,
+  "target_dataset": "MVDRaidZPool",
+  "recursive": true,
+  "compression": null,
+  "speed_limit": null,
+  "enabled": true,
+  "direction": "PUSH",
+  "transport": "SSH+NETCAT",
+  "netcat_active_side": "REMOTE",
+  "netcat_active_side_port_min": null,
+  "netcat_active_side_port_max": null,
+  "source_datasets": [
+   "MVDRAIDZS2DPOOL"
+  ],
+  "exclude": [],
+  "naming_schema": [],
+  "auto": true,
+  "only_matching_schedule": false,
+  "readonly": "SET",
+  "allow_from_scratch": false,
+  "hold_pending_snapshots": false,
+  "retention_policy": "SOURCE",
+  "lifetime_unit": null,
+  "lifetime_value": null,
+  "large_block": true,
+  "embed": false,
+  "compressed": true,
+  "retries": 15,
+  "netcat_active_side_listen_address": null,
+  "netcat_passive_side_connect_address": null,
+  "logging_level": null,
+  "name": "MVDRAIDZS2DPOOL - MVDRaidZPool",
+  "state": {
+   "state": "FINISHED",
+   "datetime": {
+    "$date": 1643918421098
+   },
+   "warnings": [],
+   "last_snapshot": "MVDRAIDZS2DPOOL/mvdsqlclustersharedvol@auto-2022-02-03_12-00"
+  },
+  "properties": true,
+  "properties_exclude": [],
+  "replicate": false,
+  "encryption": false,
+  "encryption_key": null,
+  "encryption_key_format": null,
+  "encryption_key_location": null,
+  "ssh_credentials": {
+   "id": 12,
+   "name": "USTrueNAS2",
+   "type": "SSH_CREDENTIALS",
+   "attributes": {
+    "host": "192.168.31.214",
+    "port": 22,
+    "username": "root",
+    "private_key": 11,
+    "remote_host_key": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDLB+8FfL2E5KbcSuz3PcTsKlfRrSvAbJV7PN3hp83QKGzFmoB2IKbI9fjpiJyvFtnKA8JNohGDeQWr58uQA6WvTfaO4o1itWYj8Up1evytDTxp5+kWeZybDMEWXi5KUo4+K2EK0F/WbwIRtDdeLZSoAP7qgIlH0ldN93rvYhsfyvjSofUa/rNyVHfgi025UG1xciaeC3czZ2v0+94x4vx9kFL+5puY18I2lyxgl8RKI842PYbQKcEuhJKFT8rpfmlES8ViYUv/DA1dSvdrdjYNX8DpF9/kBYUARslWeIMBDSPqXw9HFe/Vlcux2NvRjAzZ/md+AR1rNYeh+cdn6tJox1KZurh54CsPpZfUkKTQbhT8hCGvaK3sVKGPCsv/Yez2CdrCLU0+vR9voAhT79r8vXbJsGziUA4QhD7NFmLRbag1h6j80y3a7uyETPjX9wI4HIBrDuTJDrXpdLJDOUbm485Vsb8G19KyN+w0rncU7SRf1qRLJs8DkyFGYinCD1k= root@usvirtualnas.local\necdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBGSbUvJd0R91F+Ri6UcDvInmGQoaTkXvXwLa1BmrP/D6z2ZD2AiS6XRN46WKjmkbcrzxs8cqbXfXkPb+SDufTLs= root@usvirtualnas.local\nssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDC70udtY2Ae+fTpuNspUnXnTca+VwYRlAkT54wHV9Ps root@usvirtualnas.local",
+    "cipher": "DISABLED",
+    "connect_timeout": 10
+   }
+  },
+  "periodic_snapshot_tasks": [
+   {
+    "id": 9,
+    "dataset": "MVDRAIDZS2DPOOL",
+    "recursive": true,
+    "lifetime_value": 3,
+    "lifetime_unit": "DAY",
+    "enabled": true,
+    "exclude": [],
+    "naming_schema": "auto-%Y-%m-%d_%H-%M",
+    "allow_empty": true,
+    "schedule": {
+     "minute": "0",
+     "hour": "*",
+     "dom": "*",
+     "month": "*",
+     "dow": "*",
+     "begin": "00:00",
+     "end": "23:59"
+    }
+   }
+  ],
+  "also_include_naming_schema": [],
+  "schedule": null,
+  "restrict_schedule": null,
+  "job": {
+   "id": 183475,
+   "method": "replication.run",
+   "arguments": [
+    1,
+    false
+   ],
+   "logs_path": "/tmp/middlewared/jobs/183475.log",
+   "logs_excerpt": "[2022/02/03 12:00:00] INFO     [Thread-7421] [zettarepl.paramiko.replication_task__task_1] Connected (version 2.0, client OpenSSH_8.4-hpn14v15)\n[2022/02/03 12:00:01] INFO     [Thread-7421] [zettarepl.paramiko.replication_task__task_1] Authentication (publickey) successful!\n[2022/02/03 12:00:06] INFO     [replication_task__task_1] [zettarepl.replication.run] For replication task 'task_1': doing push from 'MVDRAIDZS2DPOOL' to 'MVDRaidZPool' of snapshot='auto-2022-02-03_12-00' incremental_base='auto-2022-02-03_11-00' receive_resume_token=None encryption=False\n[2022/02/03 12:00:07] INFO     [replication_task__task_1] [zettarepl.paramiko.replication_task__task_1.sftp] [chan 11] Opened sftp connection (server version 3)\n[2022/02/03 12:00:08] INFO     [replication_task__task_1] [zettarepl.transport.ssh_netcat] Automatically chose connect address '192.168.31.214'\n[2022/02/03 12:00:11] INFO     [replication_task__task_1] [zettarepl.replication.run] For replication task 'task_1': doing push from 'MVDRAIDZS2DPOOL/MVDSQL_HF_RC' to 'MVDRaidZPool/MVDSQL_HF_RC' of snapshot='auto-2022-02-03_12-00' incremental_base='auto-2022-02-03_11-00' receive_resume_token=None encryption=False\n[2022/02/03 12:00:12] INFO     [replication_task__task_1] [zettarepl.transport.ssh_netcat] Automatically chose connect address '192.168.31.214'\n[2022/02/03 12:00:14] INFO     [replication_task__task_1] [zettarepl.replication.run] For replication task 'task_1': doing push from 'MVDRAIDZS2DPOOL/mvdsql_ci_qa' to 'MVDRaidZPool/mvdsql_ci_qa' of snapshot='auto-2022-02-03_12-00' incremental_base='auto-2022-02-03_11-00' receive_resume_token=None encryption=False\n[2022/02/03 12:00:15] INFO     [replication_task__task_1] [zettarepl.transport.ssh_netcat] Automatically chose connect address '192.168.31.214'\n[2022/02/03 12:00:17] INFO     [replication_task__task_1] [zettarepl.replication.run] For replication task 'task_1': doing push from 'MVDRAIDZS2DPOOL/mvdsqlclustersharedvol' to 'MVDRaidZPool/mvdsqlclustersharedvol' of snapshot='auto-2022-02-03_12-00' incremental_base='auto-2022-02-03_11-00' receive_resume_token=None encryption=False\n[2022/02/03 12:00:18] INFO     [replication_task__task_1] [zettarepl.transport.ssh_netcat] Automatically chose connect address '192.168.31.214'\n",
+   "progress": {
+    "percent": 100,
+    "description": "Sending 4 of 4: MVDRAIDZS2DPOOL/mvdsqlclustersharedvol@auto-2022-02-03_12-00",
+    "extra": null
+   },
+   "result": null,
+   "error": null,
+   "exception": null,
+   "exc_info": null,
+   "state": "SUCCESS",
+   "time_started": {
+    "$date": 1643918400494
+   },
+   "time_finished": {
+    "$date": 1643918421111
+   }
+  }
+ },
+ {
+  "id": 2,
+  "target_dataset": "MVDMacProRAIDZPool",
+  "recursive": true,
+  "compression": null,
+  "speed_limit": null,
+  "enabled": true,
+  "direction": "PUSH",
+  "transport": "SSH+NETCAT",
+  "netcat_active_side": "REMOTE",
+  "netcat_active_side_port_min": null,
+  "netcat_active_side_port_max": null,
+  "source_datasets": [
+   "mvdmacproraidzpool"
+  ],
+  "exclude": [],
+  "naming_schema": [],
+  "auto": true,
+  "only_matching_schedule": false,
+  "readonly": "SET",
+  "allow_from_scratch": false,
+  "hold_pending_snapshots": false,
+  "retention_policy": "SOURCE",
+  "lifetime_unit": null,
+  "lifetime_value": null,
+  "large_block": true,
+  "embed": false,
+  "compressed": true,
+  "retries": 15,
+  "netcat_active_side_listen_address": null,
+  "netcat_passive_side_connect_address": null,
+  "logging_level": null,
+  "name": "mvdmacproraidzpool - MVDMacProRAIDZPool",
+  "state": {
+   "state": "FINISHED",
+   "datetime": {
+    "$date": 1643918424132
+   },
+   "warnings": [],
+   "last_snapshot": "mvdmacproraidzpool/MVDMacProRaidZVol@auto-2022-02-03_12-00"
+  },
+  "properties": true,
+  "properties_exclude": [],
+  "replicate": false,
+  "encryption": false,
+  "encryption_key": null,
+  "encryption_key_format": null,
+  "encryption_key_location": null,
+  "ssh_credentials": {
+   "id": 12,
+   "name": "USTrueNAS2",
+   "type": "SSH_CREDENTIALS",
+   "attributes": {
+    "host": "192.168.31.214",
+    "port": 22,
+    "username": "root",
+    "private_key": 11,
+    "remote_host_key": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDLB+8FfL2E5KbcSuz3PcTsKlfRrSvAbJV7PN3hp83QKGzFmoB2IKbI9fjpiJyvFtnKA8JNohGDeQWr58uQA6WvTfaO4o1itWYj8Up1evytDTxp5+kWeZybDMEWXi5KUo4+K2EK0F/WbwIRtDdeLZSoAP7qgIlH0ldN93rvYhsfyvjSofUa/rNyVHfgi025UG1xciaeC3czZ2v0+94x4vx9kFL+5puY18I2lyxgl8RKI842PYbQKcEuhJKFT8rpfmlES8ViYUv/DA1dSvdrdjYNX8DpF9/kBYUARslWeIMBDSPqXw9HFe/Vlcux2NvRjAzZ/md+AR1rNYeh+cdn6tJox1KZurh54CsPpZfUkKTQbhT8hCGvaK3sVKGPCsv/Yez2CdrCLU0+vR9voAhT79r8vXbJsGziUA4QhD7NFmLRbag1h6j80y3a7uyETPjX9wI4HIBrDuTJDrXpdLJDOUbm485Vsb8G19KyN+w0rncU7SRf1qRLJs8DkyFGYinCD1k= root@usvirtualnas.local\necdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBGSbUvJd0R91F+Ri6UcDvInmGQoaTkXvXwLa1BmrP/D6z2ZD2AiS6XRN46WKjmkbcrzxs8cqbXfXkPb+SDufTLs= root@usvirtualnas.local\nssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDC70udtY2Ae+fTpuNspUnXnTca+VwYRlAkT54wHV9Ps root@usvirtualnas.local",
+    "cipher": "DISABLED",
+    "connect_timeout": 10
+   }
+  },
+  "periodic_snapshot_tasks": [
+   {
+    "id": 10,
+    "dataset": "mvdmacproraidzpool",
+    "recursive": true,
+    "lifetime_value": 3,
+    "lifetime_unit": "DAY",
+    "enabled": true,
+    "exclude": [],
+    "naming_schema": "auto-%Y-%m-%d_%H-%M",
+    "allow_empty": true,
+    "schedule": {
+     "minute": "0",
+     "hour": "*",
+     "dom": "*",
+     "month": "*",
+     "dow": "*",
+     "begin": "00:00",
+     "end": "23:59"
+    }
+   }
+  ],
+  "also_include_naming_schema": [],
+  "schedule": null,
+  "restrict_schedule": null,
+  "job": {
+   "id": 183476,
+   "method": "replication.run",
+   "arguments": [
+    2,
+    false
+   ],
+   "logs_path": "/tmp/middlewared/jobs/183476.log",
+   "logs_excerpt": "[2022/02/03 12:00:00] INFO     [Thread-7420] [zettarepl.paramiko.replication_task__task_2] Connected (version 2.0, client OpenSSH_8.4-hpn14v15)\n[2022/02/03 12:00:01] INFO     [Thread-7420] [zettarepl.paramiko.replication_task__task_2] Authentication (publickey) successful!\n[2022/02/03 12:00:04] INFO     [replication_task__task_2] [zettarepl.replication.run] For replication task 'task_2': doing push from 'mvdmacproraidzpool' to 'MVDMacProRAIDZPool' of snapshot='auto-2022-02-03_12-00' incremental_base='auto-2022-02-03_11-00' receive_resume_token=None encryption=False\n[2022/02/03 12:00:05] INFO     [replication_task__task_2] [zettarepl.paramiko.replication_task__task_2.sftp] [chan 7] Opened sftp connection (server version 3)\n[2022/02/03 12:00:06] INFO     [replication_task__task_2] [zettarepl.transport.ssh_netcat] Automatically chose connect address '192.168.31.214'\n[2022/02/03 12:00:09] INFO     [replication_task__task_2] [zettarepl.replication.run] For replication task 'task_2': doing push from 'mvdmacproraidzpool/MVDMacProRaidZVol' to 'MVDMacProRAIDZPool/MVDMacProRaidZVol' of snapshot='auto-2022-02-03_12-00' incremental_base='auto-2022-02-03_11-00' receive_resume_token=None encryption=False\n[2022/02/03 12:00:10] INFO     [replication_task__task_2] [zettarepl.transport.ssh_netcat] Automatically chose connect address '192.168.31.214'\n[2022/02/03 12:00:20] WARNING  [replication_task__task_2.stdout_copy] [zettarepl.transport.base_ssh.root@192.168.31.214.shell.2796.async_exec.73338] Copying stdout from <paramiko.ChannelFile from <paramiko.Channel 11 (open) window=4194304 -> <paramiko.Transport at 0xf62ba60 (cipher aes128-ctr, 128 bits) (active; 2 open channel(s))>>> failed: timeout()\n",
+   "progress": {
+    "percent": 100,
+    "description": "Sending 2 of 2: mvdmacproraidzpool/MVDMacProRaidZVol@auto-2022-02-03_12-00",
+    "extra": null
+   },
+   "result": null,
+   "error": null,
+   "exception": null,
+   "exc_info": null,
+   "state": "SUCCESS",
+   "time_started": {
+    "$date": 1643918400505
+   },
+   "time_finished": {
+    "$date": 1643918424145
+   }
+  }
+ }
+]

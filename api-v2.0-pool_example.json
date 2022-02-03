@@ -1,0 +1,2844 @@
+[
+ {
+  "id": 12,
+  "name": "default",
+  "guid": "5201774890587771781",
+  "encrypt": 0,
+  "encryptkey": "",
+  "path": "/mnt/default",
+  "status": "ONLINE",
+  "scan": {
+   "function": "SCRUB",
+   "state": "FINISHED",
+   "start_time": {
+    "$date": 1642320004000
+   },
+   "end_time": {
+    "$date": 1642320010000
+   },
+   "percentage": 0.0,
+   "bytes_to_process": 1139900416,
+   "bytes_processed": 1141026816,
+   "bytes_issued": 0,
+   "pause": null,
+   "errors": 0,
+   "total_secs_left": null
+  },
+  "topology": {
+   "data": [
+    {
+     "type": "MIRROR",
+     "path": null,
+     "guid": "4294655253841054075",
+     "status": "ONLINE",
+     "stats": {
+      "timestamp": 219550354030871,
+      "read_errors": 0,
+      "write_errors": 0,
+      "checksum_errors": 0,
+      "ops": [
+       0,
+       85382,
+       3210974,
+       0,
+       0,
+       0,
+       0
+      ],
+      "bytes": [
+       0,
+       10768510976,
+       127050104832,
+       0,
+       0,
+       0,
+       0
+      ],
+      "size": 133143986176,
+      "allocated": 1172201472,
+      "fragmentation": 1,
+      "self_healed": 0,
+      "configured_ashift": 12,
+      "logical_ashift": 9,
+      "physical_ashift": 12
+     },
+     "children": [
+      {
+       "type": "DISK",
+       "path": "/dev/gptid/565c2aa5-d104-11eb-9f4b-00155d1e2398",
+       "guid": "1783979725651822271",
+       "status": "ONLINE",
+       "stats": {
+        "timestamp": 219550354102170,
+        "read_errors": 0,
+        "write_errors": 0,
+        "checksum_errors": 0,
+        "ops": [
+         0,
+         42922,
+         1598986,
+         0,
+         0,
+         0,
+         0
+        ],
+        "bytes": [
+         0,
+         5408571392,
+         63525052416,
+         0,
+         0,
+         0,
+         0
+        ],
+        "size": 0,
+        "allocated": 0,
+        "fragmentation": 0,
+        "self_healed": 0,
+        "configured_ashift": 12,
+        "logical_ashift": 9,
+        "physical_ashift": 12
+       },
+       "children": [],
+       "device": "da2p2",
+       "disk": "da2",
+       "unavail_disk": null
+      },
+      {
+       "type": "DISK",
+       "path": "/dev/gptid/566f0352-d104-11eb-9f4b-00155d1e2398",
+       "guid": "9167833918786719096",
+       "status": "ONLINE",
+       "stats": {
+        "timestamp": 219550354175171,
+        "read_errors": 0,
+        "write_errors": 0,
+        "checksum_errors": 0,
+        "ops": [
+         0,
+         42460,
+         1611988,
+         0,
+         0,
+         0,
+         0
+        ],
+        "bytes": [
+         0,
+         5359939584,
+         63525052416,
+         0,
+         0,
+         0,
+         0
+        ],
+        "size": 0,
+        "allocated": 0,
+        "fragmentation": 0,
+        "self_healed": 0,
+        "configured_ashift": 12,
+        "logical_ashift": 9,
+        "physical_ashift": 12
+       },
+       "children": [],
+       "device": "da1p2",
+       "disk": "da1",
+       "unavail_disk": null
+      }
+     ],
+     "unavail_disk": null
+    }
+   ],
+   "log": [],
+   "cache": [],
+   "spare": [],
+   "special": [],
+   "dedup": []
+  },
+  "healthy": true,
+  "status_detail": null,
+  "autotrim": {
+   "value": "off",
+   "rawvalue": "off",
+   "parsed": "off",
+   "source": "DEFAULT"
+  },
+  "encryptkey_path": null,
+  "is_decrypted": true
+ },
+ {
+  "id": 19,
+  "name": "usmacproraidz",
+  "guid": "10495183218679982579",
+  "encrypt": 0,
+  "encryptkey": "",
+  "path": "/mnt/usmacproraidz",
+  "status": "ONLINE",
+  "scan": {
+   "function": "SCRUB",
+   "state": "FINISHED",
+   "start_time": {
+    "$date": 1643529607000
+   },
+   "end_time": {
+    "$date": 1643537739000
+   },
+   "percentage": 0.0,
+   "bytes_to_process": 2496186679296,
+   "bytes_processed": 2499021897728,
+   "bytes_issued": 0,
+   "pause": null,
+   "errors": 0,
+   "total_secs_left": null
+  },
+  "topology": {
+   "data": [
+    {
+     "type": "RAIDZ1",
+     "path": null,
+     "guid": "14559725585372514545",
+     "status": "ONLINE",
+     "stats": {
+      "timestamp": 219531495966072,
+      "read_errors": 0,
+      "write_errors": 0,
+      "checksum_errors": 0,
+      "ops": [
+       0,
+       3429774,
+       7962065,
+       0,
+       0,
+       0,
+       0
+      ],
+      "bytes": [
+       0,
+       29981405184,
+       142313897984,
+       0,
+       0,
+       0,
+       0
+      ],
+      "size": 2181843386368,
+      "allocated": 1688695128064,
+      "fragmentation": 36,
+      "self_healed": 0,
+      "configured_ashift": 12,
+      "logical_ashift": 9,
+      "physical_ashift": 12
+     },
+     "children": [
+      {
+       "type": "DISK",
+       "path": "/dev/gptid/6df37085-489e-11ec-8499-00155d1e2398",
+       "guid": "7928674014916912306",
+       "status": "ONLINE",
+       "stats": {
+        "timestamp": 219531496011572,
+        "read_errors": 0,
+        "write_errors": 0,
+        "checksum_errors": 0,
+        "ops": [
+         0,
+         914252,
+         2011968,
+         0,
+         0,
+         0,
+         0
+        ],
+        "bytes": [
+         0,
+         8034476032,
+         35965157376,
+         0,
+         0,
+         0,
+         0
+        ],
+        "size": 0,
+        "allocated": 0,
+        "fragmentation": 0,
+        "self_healed": 0,
+        "configured_ashift": 12,
+        "logical_ashift": 9,
+        "physical_ashift": 12
+       },
+       "children": [],
+       "device": "da21p2",
+       "disk": "da21",
+       "unavail_disk": null
+      },
+      {
+       "type": "DISK",
+       "path": "/dev/gptid/6e6a7f88-489e-11ec-8499-00155d1e2398",
+       "guid": "4674033259234566101",
+       "status": "ONLINE",
+       "stats": {
+        "timestamp": 219531496038572,
+        "read_errors": 0,
+        "write_errors": 0,
+        "checksum_errors": 0,
+        "ops": [
+         0,
+         795550,
+         1967245,
+         0,
+         0,
+         0,
+         0
+        ],
+        "bytes": [
+         0,
+         6836076544,
+         35171901440,
+         0,
+         0,
+         0,
+         0
+        ],
+        "size": 0,
+        "allocated": 0,
+        "fragmentation": 0,
+        "self_healed": 0,
+        "configured_ashift": 12,
+        "logical_ashift": 9,
+        "physical_ashift": 12
+       },
+       "children": [],
+       "device": "da19p2",
+       "disk": "da19",
+       "unavail_disk": null
+      },
+      {
+       "type": "DISK",
+       "path": "/dev/gptid/6e7ca39b-489e-11ec-8499-00155d1e2398",
+       "guid": "12468539613572796095",
+       "status": "ONLINE",
+       "stats": {
+        "timestamp": 219531496065472,
+        "read_errors": 0,
+        "write_errors": 0,
+        "checksum_errors": 0,
+        "ops": [
+         0,
+         919402,
+         2013087,
+         0,
+         0,
+         0,
+         0
+        ],
+        "bytes": [
+         0,
+         8188784640,
+         35968118784,
+         0,
+         0,
+         0,
+         0
+        ],
+        "size": 0,
+        "allocated": 0,
+        "fragmentation": 0,
+        "self_healed": 0,
+        "configured_ashift": 12,
+        "logical_ashift": 9,
+        "physical_ashift": 12
+       },
+       "children": [],
+       "device": "da22p2",
+       "disk": "da22",
+       "unavail_disk": null
+      },
+      {
+       "type": "DISK",
+       "path": "/dev/gptid/6e8cdd5e-489e-11ec-8499-00155d1e2398",
+       "guid": "1797883781886245549",
+       "status": "ONLINE",
+       "stats": {
+        "timestamp": 219531496090472,
+        "read_errors": 0,
+        "write_errors": 0,
+        "checksum_errors": 0,
+        "ops": [
+         0,
+         800570,
+         1969765,
+         0,
+         0,
+         0,
+         0
+        ],
+        "bytes": [
+         0,
+         6922067968,
+         35208720384,
+         0,
+         0,
+         0,
+         0
+        ],
+        "size": 0,
+        "allocated": 0,
+        "fragmentation": 0,
+        "self_healed": 0,
+        "configured_ashift": 12,
+        "logical_ashift": 9,
+        "physical_ashift": 12
+       },
+       "children": [],
+       "device": "da20p2",
+       "disk": "da20",
+       "unavail_disk": null
+      }
+     ],
+     "unavail_disk": null
+    },
+    {
+     "type": "RAIDZ1",
+     "path": null,
+     "guid": "10161347341914819500",
+     "status": "ONLINE",
+     "stats": {
+      "timestamp": 219531496229572,
+      "read_errors": 0,
+      "write_errors": 0,
+      "checksum_errors": 0,
+      "ops": [
+       0,
+       2854114,
+       9442859,
+       0,
+       0,
+       0,
+       0
+      ],
+      "bytes": [
+       0,
+       31744622592,
+       181824049152,
+       0,
+       0,
+       0,
+       0
+      ],
+      "size": 2181843386368,
+      "allocated": 839970586624,
+      "fragmentation": 29,
+      "self_healed": 0,
+      "configured_ashift": 12,
+      "logical_ashift": 9,
+      "physical_ashift": 12
+     },
+     "children": [
+      {
+       "type": "DISK",
+       "path": "/dev/gptid/82c8722f-492b-11ec-8499-00155d1e2398",
+       "guid": "811965197987634187",
+       "status": "ONLINE",
+       "stats": {
+        "timestamp": 219531496272272,
+        "read_errors": 0,
+        "write_errors": 0,
+        "checksum_errors": 0,
+        "ops": [
+         0,
+         773894,
+         2381156,
+         0,
+         0,
+         0,
+         0
+        ],
+        "bytes": [
+         0,
+         8693325824,
+         45924683776,
+         0,
+         0,
+         0,
+         0
+        ],
+        "size": 0,
+        "allocated": 0,
+        "fragmentation": 0,
+        "self_healed": 0,
+        "configured_ashift": 12,
+        "logical_ashift": 9,
+        "physical_ashift": 12
+       },
+       "children": [],
+       "device": "da28p2",
+       "disk": "da28",
+       "unavail_disk": null
+      },
+      {
+       "type": "DISK",
+       "path": "/dev/gptid/833d1157-492b-11ec-8499-00155d1e2398",
+       "guid": "973516100818230136",
+       "status": "ONLINE",
+       "stats": {
+        "timestamp": 219531496297672,
+        "read_errors": 0,
+        "write_errors": 0,
+        "checksum_errors": 0,
+        "ops": [
+         0,
+         657287,
+         2341257,
+         0,
+         0,
+         0,
+         0
+        ],
+        "bytes": [
+         0,
+         7349280768,
+         44982292480,
+         0,
+         0,
+         0,
+         0
+        ],
+        "size": 0,
+        "allocated": 0,
+        "fragmentation": 0,
+        "self_healed": 0,
+        "configured_ashift": 12,
+        "logical_ashift": 9,
+        "physical_ashift": 12
+       },
+       "children": [],
+       "device": "da26p2",
+       "disk": "da26",
+       "unavail_disk": null
+      },
+      {
+       "type": "DISK",
+       "path": "/dev/gptid/83001230-492b-11ec-8499-00155d1e2398",
+       "guid": "14220577061618395083",
+       "status": "ONLINE",
+       "stats": {
+        "timestamp": 219531496322772,
+        "read_errors": 0,
+        "write_errors": 0,
+        "checksum_errors": 0,
+        "ops": [
+         0,
+         768054,
+         2380689,
+         0,
+         0,
+         0,
+         0
+        ],
+        "bytes": [
+         0,
+         8481251328,
+         45925715968,
+         0,
+         0,
+         0,
+         0
+        ],
+        "size": 0,
+        "allocated": 0,
+        "fragmentation": 0,
+        "self_healed": 0,
+        "configured_ashift": 12,
+        "logical_ashift": 9,
+        "physical_ashift": 12
+       },
+       "children": [],
+       "device": "da29p2",
+       "disk": "da29",
+       "unavail_disk": null
+      },
+      {
+       "type": "DISK",
+       "path": "/dev/gptid/835d610b-492b-11ec-8499-00155d1e2398",
+       "guid": "15220632101923708142",
+       "status": "ONLINE",
+       "stats": {
+        "timestamp": 219531496348172,
+        "read_errors": 0,
+        "write_errors": 0,
+        "checksum_errors": 0,
+        "ops": [
+         0,
+         654879,
+         2339757,
+         0,
+         0,
+         0,
+         0
+        ],
+        "bytes": [
+         0,
+         7220764672,
+         44991356928,
+         0,
+         0,
+         0,
+         0
+        ],
+        "size": 0,
+        "allocated": 0,
+        "fragmentation": 0,
+        "self_healed": 0,
+        "configured_ashift": 12,
+        "logical_ashift": 9,
+        "physical_ashift": 12
+       },
+       "children": [],
+       "device": "da27p2",
+       "disk": "da27",
+       "unavail_disk": null
+      }
+     ],
+     "unavail_disk": null
+    }
+   ],
+   "log": [],
+   "cache": [],
+   "spare": [],
+   "special": [],
+   "dedup": []
+  },
+  "healthy": true,
+  "status_detail": null,
+  "autotrim": {
+   "value": "off",
+   "rawvalue": "off",
+   "parsed": "off",
+   "source": "DEFAULT"
+  },
+  "encryptkey_path": null,
+  "is_decrypted": true
+ },
+ {
+  "id": 20,
+  "name": "USSQLBackups",
+  "guid": "12917023764150089806",
+  "encrypt": 0,
+  "encryptkey": "",
+  "path": "/mnt/USSQLBackups",
+  "status": "ONLINE",
+  "scan": {
+   "function": "SCRUB",
+   "state": "FINISHED",
+   "start_time": {
+    "$date": 1643529604000
+   },
+   "end_time": {
+    "$date": 1643529658000
+   },
+   "percentage": 0.0,
+   "bytes_to_process": 16286982144,
+   "bytes_processed": 16286547968,
+   "bytes_issued": 0,
+   "pause": null,
+   "errors": 0,
+   "total_secs_left": null
+  },
+  "topology": {
+   "data": [
+    {
+     "type": "RAIDZ1",
+     "path": null,
+     "guid": "17118779645854763244",
+     "status": "ONLINE",
+     "stats": {
+      "timestamp": 219518604418374,
+      "read_errors": 0,
+      "write_errors": 0,
+      "checksum_errors": 0,
+      "ops": [
+       0,
+       343,
+       1272,
+       0,
+       0,
+       0,
+       0
+      ],
+      "bytes": [
+       0,
+       3674112,
+       12537856,
+       0,
+       0,
+       0,
+       0
+      ],
+      "size": 1640677507072,
+      "allocated": 16287309824,
+      "fragmentation": 0,
+      "self_healed": 0,
+      "configured_ashift": 12,
+      "logical_ashift": 9,
+      "physical_ashift": 12
+     },
+     "children": [
+      {
+       "type": "DISK",
+       "path": "/dev/gptid/e152b741-48a4-11ec-8499-00155d1e2398",
+       "guid": "7011422492099121808",
+       "status": "ONLINE",
+       "stats": {
+        "timestamp": 219518604503974,
+        "read_errors": 0,
+        "write_errors": 0,
+        "checksum_errors": 0,
+        "ops": [
+         0,
+         102,
+         419,
+         0,
+         0,
+         0,
+         0
+        ],
+        "bytes": [
+         0,
+         1196032,
+         4063232,
+         0,
+         0,
+         0,
+         0
+        ],
+        "size": 0,
+        "allocated": 0,
+        "fragmentation": 0,
+        "self_healed": 0,
+        "configured_ashift": 12,
+        "logical_ashift": 9,
+        "physical_ashift": 12
+       },
+       "children": [],
+       "device": "da25p2",
+       "disk": "da25",
+       "unavail_disk": null
+      },
+      {
+       "type": "DISK",
+       "path": "/dev/gptid/e20043a8-48a4-11ec-8499-00155d1e2398",
+       "guid": "13750838298345646579",
+       "status": "ONLINE",
+       "stats": {
+        "timestamp": 219518604547173,
+        "read_errors": 0,
+        "write_errors": 0,
+        "checksum_errors": 0,
+        "ops": [
+         0,
+         123,
+         424,
+         0,
+         0,
+         0,
+         0
+        ],
+        "bytes": [
+         0,
+         1249280,
+         4227072,
+         0,
+         0,
+         0,
+         0
+        ],
+        "size": 0,
+        "allocated": 0,
+        "fragmentation": 0,
+        "self_healed": 0,
+        "configured_ashift": 12,
+        "logical_ashift": 9,
+        "physical_ashift": 12
+       },
+       "children": [],
+       "device": "da24p2",
+       "disk": "da24",
+       "unavail_disk": null
+      },
+      {
+       "type": "DISK",
+       "path": "/dev/gptid/e2196725-48a4-11ec-8499-00155d1e2398",
+       "guid": "1580505208687683996",
+       "status": "ONLINE",
+       "stats": {
+        "timestamp": 219518604586573,
+        "read_errors": 0,
+        "write_errors": 0,
+        "checksum_errors": 0,
+        "ops": [
+         0,
+         118,
+         429,
+         0,
+         0,
+         0,
+         0
+        ],
+        "bytes": [
+         0,
+         1228800,
+         4247552,
+         0,
+         0,
+         0,
+         0
+        ],
+        "size": 0,
+        "allocated": 0,
+        "fragmentation": 0,
+        "self_healed": 0,
+        "configured_ashift": 12,
+        "logical_ashift": 9,
+        "physical_ashift": 12
+       },
+       "children": [],
+       "device": "da23p2",
+       "disk": "da23",
+       "unavail_disk": null
+      }
+     ],
+     "unavail_disk": null
+    }
+   ],
+   "log": [],
+   "cache": [],
+   "spare": [],
+   "special": [],
+   "dedup": []
+  },
+  "healthy": true,
+  "status_detail": null,
+  "autotrim": {
+   "value": "off",
+   "rawvalue": "off",
+   "parsed": "off",
+   "source": "DEFAULT"
+  },
+  "encryptkey_path": null,
+  "is_decrypted": true
+ },
+ {
+  "id": 21,
+  "name": "S2DRAIDZPOOL",
+  "guid": "2182409722454168056",
+  "encrypt": 0,
+  "encryptkey": "",
+  "path": "/mnt/S2DRAIDZPOOL",
+  "status": "ONLINE",
+  "scan": {
+   "function": "SCRUB",
+   "state": "FINISHED",
+   "start_time": {
+    "$date": 1643529605000
+   },
+   "end_time": {
+    "$date": 1643535019000
+   },
+   "percentage": 0.0,
+   "bytes_to_process": 2069714231296,
+   "bytes_processed": 2069680840704,
+   "bytes_issued": 0,
+   "pause": null,
+   "errors": 0,
+   "total_secs_left": null
+  },
+  "topology": {
+   "data": [
+    {
+     "type": "RAIDZ1",
+     "path": null,
+     "guid": "18219271445198761953",
+     "status": "ONLINE",
+     "stats": {
+      "timestamp": 219504118109675,
+      "read_errors": 0,
+      "write_errors": 0,
+      "checksum_errors": 0,
+      "ops": [
+       0,
+       3745295,
+       7569102,
+       0,
+       0,
+       0,
+       0
+      ],
+      "bytes": [
+       0,
+       34184425472,
+       297852841984,
+       0,
+       0,
+       0,
+       0
+      ],
+      "size": 1640677507072,
+      "allocated": 796785377280,
+      "fragmentation": 14,
+      "self_healed": 0,
+      "configured_ashift": 12,
+      "logical_ashift": 9,
+      "physical_ashift": 12
+     },
+     "children": [
+      {
+       "type": "DISK",
+       "path": "/dev/gptid/5edab251-496c-11ec-8499-00155d1e2398",
+       "guid": "2143069454720298500",
+       "status": "ONLINE",
+       "stats": {
+        "timestamp": 219504118222375,
+        "read_errors": 0,
+        "write_errors": 0,
+        "checksum_errors": 0,
+        "ops": [
+         0,
+         1243837,
+         2519916,
+         0,
+         0,
+         0,
+         0
+        ],
+        "bytes": [
+         0,
+         11402706944,
+         99286384640,
+         0,
+         0,
+         0,
+         0
+        ],
+        "size": 0,
+        "allocated": 0,
+        "fragmentation": 0,
+        "self_healed": 0,
+        "configured_ashift": 12,
+        "logical_ashift": 9,
+        "physical_ashift": 12
+       },
+       "children": [],
+       "device": "da3p2",
+       "disk": "da3",
+       "unavail_disk": null
+      },
+      {
+       "type": "DISK",
+       "path": "/dev/gptid/5ebf18dd-496c-11ec-8499-00155d1e2398",
+       "guid": "5039582806017960596",
+       "status": "ONLINE",
+       "stats": {
+        "timestamp": 219504118258175,
+        "read_errors": 0,
+        "write_errors": 0,
+        "checksum_errors": 0,
+        "ops": [
+         0,
+         1250117,
+         2525714,
+         0,
+         0,
+         0,
+         0
+        ],
+        "bytes": [
+         0,
+         11391574016,
+         99281235968,
+         0,
+         0,
+         0,
+         0
+        ],
+        "size": 0,
+        "allocated": 0,
+        "fragmentation": 0,
+        "self_healed": 0,
+        "configured_ashift": 12,
+        "logical_ashift": 9,
+        "physical_ashift": 12
+       },
+       "children": [],
+       "device": "da5p2",
+       "disk": "da5",
+       "unavail_disk": null
+      },
+      {
+       "type": "DISK",
+       "path": "/dev/gptid/5ea9bd66-496c-11ec-8499-00155d1e2398",
+       "guid": "767379419980871856",
+       "status": "ONLINE",
+       "stats": {
+        "timestamp": 219504118291175,
+        "read_errors": 0,
+        "write_errors": 0,
+        "checksum_errors": 0,
+        "ops": [
+         0,
+         1251341,
+         2523472,
+         0,
+         0,
+         0,
+         0
+        ],
+        "bytes": [
+         0,
+         11390144512,
+         99285221376,
+         0,
+         0,
+         0,
+         0
+        ],
+        "size": 0,
+        "allocated": 0,
+        "fragmentation": 0,
+        "self_healed": 0,
+        "configured_ashift": 12,
+        "logical_ashift": 9,
+        "physical_ashift": 12
+       },
+       "children": [],
+       "device": "da4p2",
+       "disk": "da4",
+       "unavail_disk": null
+      }
+     ],
+     "unavail_disk": null
+    },
+    {
+     "type": "RAIDZ1",
+     "path": null,
+     "guid": "262714104951838771",
+     "status": "ONLINE",
+     "stats": {
+      "timestamp": 219504118445175,
+      "read_errors": 0,
+      "write_errors": 0,
+      "checksum_errors": 0,
+      "ops": [
+       0,
+       4016936,
+       7714863,
+       0,
+       0,
+       0,
+       0
+      ],
+      "bytes": [
+       0,
+       35643863040,
+       304997613568,
+       0,
+       0,
+       0,
+       0
+      ],
+      "size": 1640677507072,
+      "allocated": 807019552768,
+      "fragmentation": 15,
+      "self_healed": 0,
+      "configured_ashift": 12,
+      "logical_ashift": 9,
+      "physical_ashift": 12
+     },
+     "children": [
+      {
+       "type": "DISK",
+       "path": "/dev/gptid/5da34a88-496c-11ec-8499-00155d1e2398",
+       "guid": "11870227676958123640",
+       "status": "ONLINE",
+       "stats": {
+        "timestamp": 219504118500875,
+        "read_errors": 0,
+        "write_errors": 0,
+        "checksum_errors": 0,
+        "ops": [
+         0,
+         1344642,
+         2586409,
+         0,
+         0,
+         0,
+         0
+        ],
+        "bytes": [
+         0,
+         11874328576,
+         101658673152,
+         0,
+         0,
+         0,
+         0
+        ],
+        "size": 0,
+        "allocated": 0,
+        "fragmentation": 0,
+        "self_healed": 0,
+        "configured_ashift": 12,
+        "logical_ashift": 9,
+        "physical_ashift": 12
+       },
+       "children": [],
+       "device": "da6p2",
+       "disk": "da6",
+       "unavail_disk": null
+      },
+      {
+       "type": "DISK",
+       "path": "/dev/gptid/5e35dc3a-496c-11ec-8499-00155d1e2398",
+       "guid": "4112077279288690349",
+       "status": "ONLINE",
+       "stats": {
+        "timestamp": 219504118615275,
+        "read_errors": 0,
+        "write_errors": 0,
+        "checksum_errors": 0,
+        "ops": [
+         0,
+         1333545,
+         2571660,
+         0,
+         0,
+         0,
+         0
+        ],
+        "bytes": [
+         0,
+         11888873472,
+         101664825344,
+         0,
+         0,
+         0,
+         0
+        ],
+        "size": 0,
+        "allocated": 0,
+        "fragmentation": 0,
+        "self_healed": 0,
+        "configured_ashift": 12,
+        "logical_ashift": 9,
+        "physical_ashift": 12
+       },
+       "children": [],
+       "device": "da7p2",
+       "disk": "da7",
+       "unavail_disk": null
+      },
+      {
+       "type": "DISK",
+       "path": "/dev/gptid/5f2b906c-496c-11ec-8499-00155d1e2398",
+       "guid": "8798710223044848516",
+       "status": "ONLINE",
+       "stats": {
+        "timestamp": 219504118645175,
+        "read_errors": 0,
+        "write_errors": 0,
+        "checksum_errors": 0,
+        "ops": [
+         0,
+         1338749,
+         2556794,
+         0,
+         0,
+         0,
+         0
+        ],
+        "bytes": [
+         0,
+         11880660992,
+         101674115072,
+         0,
+         0,
+         0,
+         0
+        ],
+        "size": 0,
+        "allocated": 0,
+        "fragmentation": 0,
+        "self_healed": 0,
+        "configured_ashift": 12,
+        "logical_ashift": 9,
+        "physical_ashift": 12
+       },
+       "children": [],
+       "device": "da8p2",
+       "disk": "da8",
+       "unavail_disk": null
+      }
+     ],
+     "unavail_disk": null
+    },
+    {
+     "type": "RAIDZ1",
+     "path": null,
+     "guid": "14926212781723415012",
+     "status": "ONLINE",
+     "stats": {
+      "timestamp": 219504118750175,
+      "read_errors": 0,
+      "write_errors": 0,
+      "checksum_errors": 0,
+      "ops": [
+       0,
+       2511260,
+       7776107,
+       0,
+       0,
+       0,
+       0
+      ],
+      "bytes": [
+       0,
+       33909329920,
+       317380796416,
+       0,
+       0,
+       0,
+       0
+      ],
+      "size": 1640677507072,
+      "allocated": 425833955328,
+      "fragmentation": 8,
+      "self_healed": 0,
+      "configured_ashift": 12,
+      "logical_ashift": 9,
+      "physical_ashift": 12
+     },
+     "children": [
+      {
+       "type": "DISK",
+       "path": "/dev/gptid/3d346dc1-7e64-11ec-ba03-00155d1e2398",
+       "guid": "2457070011592301261",
+       "status": "ONLINE",
+       "stats": {
+        "timestamp": 219504118791075,
+        "read_errors": 0,
+        "write_errors": 0,
+        "checksum_errors": 0,
+        "ops": [
+         0,
+         839850,
+         2587495,
+         0,
+         0,
+         0,
+         0
+        ],
+        "bytes": [
+         0,
+         11312152576,
+         105794224128,
+         0,
+         0,
+         0,
+         0
+        ],
+        "size": 0,
+        "allocated": 0,
+        "fragmentation": 0,
+        "self_healed": 0,
+        "configured_ashift": 12,
+        "logical_ashift": 9,
+        "physical_ashift": 12
+       },
+       "children": [],
+       "device": "da31p2",
+       "disk": "da31",
+       "unavail_disk": null
+      },
+      {
+       "type": "DISK",
+       "path": "/dev/gptid/3d8fbe58-7e64-11ec-ba03-00155d1e2398",
+       "guid": "3493508174227163173",
+       "status": "ONLINE",
+       "stats": {
+        "timestamp": 219504118814275,
+        "read_errors": 0,
+        "write_errors": 0,
+        "checksum_errors": 0,
+        "ops": [
+         0,
+         831098,
+         2606915,
+         0,
+         0,
+         0,
+         0
+        ],
+        "bytes": [
+         0,
+         11311779840,
+         105786249216,
+         0,
+         0,
+         0,
+         0
+        ],
+        "size": 0,
+        "allocated": 0,
+        "fragmentation": 0,
+        "self_healed": 0,
+        "configured_ashift": 12,
+        "logical_ashift": 9,
+        "physical_ashift": 12
+       },
+       "children": [],
+       "device": "da32p2",
+       "disk": "da32",
+       "unavail_disk": null
+      },
+      {
+       "type": "DISK",
+       "path": "/dev/gptid/3e22bbb7-7e64-11ec-ba03-00155d1e2398",
+       "guid": "17378647324587660829",
+       "status": "ONLINE",
+       "stats": {
+        "timestamp": 219504118840675,
+        "read_errors": 0,
+        "write_errors": 0,
+        "checksum_errors": 0,
+        "ops": [
+         0,
+         840312,
+         2581697,
+         0,
+         0,
+         0,
+         0
+        ],
+        "bytes": [
+         0,
+         11285397504,
+         105800323072,
+         0,
+         0,
+         0,
+         0
+        ],
+        "size": 0,
+        "allocated": 0,
+        "fragmentation": 0,
+        "self_healed": 0,
+        "configured_ashift": 12,
+        "logical_ashift": 9,
+        "physical_ashift": 12
+       },
+       "children": [],
+       "device": "da30p2",
+       "disk": "da30",
+       "unavail_disk": null
+      }
+     ],
+     "unavail_disk": null
+    },
+    {
+     "type": "RAIDZ1",
+     "path": null,
+     "guid": "485408272807892168",
+     "status": "ONLINE",
+     "stats": {
+      "timestamp": 219504118956075,
+      "read_errors": 0,
+      "write_errors": 0,
+      "checksum_errors": 0,
+      "ops": [
+       0,
+       1874049,
+       7747395,
+       0,
+       0,
+       0,
+       0
+      ],
+      "bytes": [
+       0,
+       27120652288,
+       319662342144,
+       0,
+       0,
+       0,
+       0
+      ],
+      "size": 1640677507072,
+      "allocated": 156248801280,
+      "fragmentation": 2,
+      "self_healed": 0,
+      "configured_ashift": 12,
+      "logical_ashift": 9,
+      "physical_ashift": 12
+     },
+     "children": [
+      {
+       "type": "DISK",
+       "path": "/dev/gptid/94ddb9c1-7fff-11ec-ba03-00155d1e2398",
+       "guid": "5267659174016436607",
+       "status": "ONLINE",
+       "stats": {
+        "timestamp": 219504118990375,
+        "read_errors": 0,
+        "write_errors": 0,
+        "checksum_errors": 0,
+        "ops": [
+         0,
+         624341,
+         2581387,
+         0,
+         0,
+         0,
+         0
+        ],
+        "bytes": [
+         0,
+         9056104448,
+         106555547648,
+         0,
+         0,
+         0,
+         0
+        ],
+        "size": 0,
+        "allocated": 0,
+        "fragmentation": 0,
+        "self_healed": 0,
+        "configured_ashift": 12,
+        "logical_ashift": 9,
+        "physical_ashift": 12
+       },
+       "children": [],
+       "device": "da35p2",
+       "disk": "da35",
+       "unavail_disk": null
+      },
+      {
+       "type": "DISK",
+       "path": "/dev/gptid/95278977-7fff-11ec-ba03-00155d1e2398",
+       "guid": "1728803206479242991",
+       "status": "ONLINE",
+       "stats": {
+        "timestamp": 219504119013475,
+        "read_errors": 0,
+        "write_errors": 0,
+        "checksum_errors": 0,
+        "ops": [
+         0,
+         625384,
+         2584463,
+         0,
+         0,
+         0,
+         0
+        ],
+        "bytes": [
+         0,
+         9019977728,
+         106550575104,
+         0,
+         0,
+         0,
+         0
+        ],
+        "size": 0,
+        "allocated": 0,
+        "fragmentation": 0,
+        "self_healed": 0,
+        "configured_ashift": 12,
+        "logical_ashift": 9,
+        "physical_ashift": 12
+       },
+       "children": [],
+       "device": "da34p2",
+       "disk": "da34",
+       "unavail_disk": null
+      },
+      {
+       "type": "DISK",
+       "path": "/dev/gptid/9532bab2-7fff-11ec-ba03-00155d1e2398",
+       "guid": "9206077483205964948",
+       "status": "ONLINE",
+       "stats": {
+        "timestamp": 219504119043875,
+        "read_errors": 0,
+        "write_errors": 0,
+        "checksum_errors": 0,
+        "ops": [
+         0,
+         624324,
+         2581545,
+         0,
+         0,
+         0,
+         0
+        ],
+        "bytes": [
+         0,
+         9044570112,
+         106556219392,
+         0,
+         0,
+         0,
+         0
+        ],
+        "size": 0,
+        "allocated": 0,
+        "fragmentation": 0,
+        "self_healed": 0,
+        "configured_ashift": 12,
+        "logical_ashift": 9,
+        "physical_ashift": 12
+       },
+       "children": [],
+       "device": "da33p2",
+       "disk": "da33",
+       "unavail_disk": null
+      }
+     ],
+     "unavail_disk": null
+    },
+    {
+     "type": "RAIDZ1",
+     "path": null,
+     "guid": "10895355035006250872",
+     "status": "ONLINE",
+     "stats": {
+      "timestamp": 219504119152075,
+      "read_errors": 0,
+      "write_errors": 0,
+      "checksum_errors": 0,
+      "ops": [
+       0,
+       1800107,
+       7639520,
+       0,
+       0,
+       0,
+       0
+      ],
+      "bytes": [
+       0,
+       27424800768,
+       317315141632,
+       0,
+       0,
+       0,
+       0
+      ],
+      "size": 1640677507072,
+      "allocated": 113325621248,
+      "fragmentation": 1,
+      "self_healed": 0,
+      "configured_ashift": 12,
+      "logical_ashift": 9,
+      "physical_ashift": 12
+     },
+     "children": [
+      {
+       "type": "DISK",
+       "path": "/dev/gptid/cbe26336-805e-11ec-ba03-00155d1e2398",
+       "guid": "4913797681569242379",
+       "status": "ONLINE",
+       "stats": {
+        "timestamp": 219504119187775,
+        "read_errors": 0,
+        "write_errors": 0,
+        "checksum_errors": 0,
+        "ops": [
+         0,
+         600577,
+         2546666,
+         0,
+         0,
+         0,
+         0
+        ],
+        "bytes": [
+         0,
+         9158791168,
+         105772572672,
+         0,
+         0,
+         0,
+         0
+        ],
+        "size": 0,
+        "allocated": 0,
+        "fragmentation": 0,
+        "self_healed": 0,
+        "configured_ashift": 12,
+        "logical_ashift": 9,
+        "physical_ashift": 12
+       },
+       "children": [],
+       "device": "da38p2",
+       "disk": "da38",
+       "unavail_disk": null
+      },
+      {
+       "type": "DISK",
+       "path": "/dev/gptid/cc19e546-805e-11ec-ba03-00155d1e2398",
+       "guid": "7872920214246440681",
+       "status": "ONLINE",
+       "stats": {
+        "timestamp": 219504119221775,
+        "read_errors": 0,
+        "write_errors": 0,
+        "checksum_errors": 0,
+        "ops": [
+         0,
+         599545,
+         2547375,
+         0,
+         0,
+         0,
+         0
+        ],
+        "bytes": [
+         0,
+         9121189888,
+         105775575040,
+         0,
+         0,
+         0,
+         0
+        ],
+        "size": 0,
+        "allocated": 0,
+        "fragmentation": 0,
+        "self_healed": 0,
+        "configured_ashift": 12,
+        "logical_ashift": 9,
+        "physical_ashift": 12
+       },
+       "children": [],
+       "device": "da36p2",
+       "disk": "da36",
+       "unavail_disk": null
+      },
+      {
+       "type": "DISK",
+       "path": "/dev/gptid/cc25c8f0-805e-11ec-ba03-00155d1e2398",
+       "guid": "13833589813420894182",
+       "status": "ONLINE",
+       "stats": {
+        "timestamp": 219504119252875,
+        "read_errors": 0,
+        "write_errors": 0,
+        "checksum_errors": 0,
+        "ops": [
+         0,
+         599985,
+         2545479,
+         0,
+         0,
+         0,
+         0
+        ],
+        "bytes": [
+         0,
+         9144819712,
+         105766993920,
+         0,
+         0,
+         0,
+         0
+        ],
+        "size": 0,
+        "allocated": 0,
+        "fragmentation": 0,
+        "self_healed": 0,
+        "configured_ashift": 12,
+        "logical_ashift": 9,
+        "physical_ashift": 12
+       },
+       "children": [],
+       "device": "da37p2",
+       "disk": "da37",
+       "unavail_disk": null
+      }
+     ],
+     "unavail_disk": null
+    },
+    {
+     "type": "RAIDZ1",
+     "path": null,
+     "guid": "14532110429939286469",
+     "status": "ONLINE",
+     "stats": {
+      "timestamp": 219504119362175,
+      "read_errors": 0,
+      "write_errors": 0,
+      "checksum_errors": 0,
+      "ops": [
+       0,
+       2059123,
+       7756382,
+       0,
+       0,
+       0,
+       0
+      ],
+      "bytes": [
+       0,
+       31712215040,
+       326858784768,
+       0,
+       0,
+       0,
+       0
+      ],
+      "size": 1640677507072,
+      "allocated": 128628121600,
+      "fragmentation": 1,
+      "self_healed": 0,
+      "configured_ashift": 12,
+      "logical_ashift": 9,
+      "physical_ashift": 12
+     },
+     "children": [
+      {
+       "type": "DISK",
+       "path": "/dev/gptid/aace10f0-805f-11ec-ba03-00155d1e2398",
+       "guid": "9163574527838510496",
+       "status": "ONLINE",
+       "stats": {
+        "timestamp": 219504119439275,
+        "read_errors": 0,
+        "write_errors": 0,
+        "checksum_errors": 0,
+        "ops": [
+         0,
+         686259,
+         2585026,
+         0,
+         0,
+         0,
+         0
+        ],
+        "bytes": [
+         0,
+         10590507008,
+         108952596480,
+         0,
+         0,
+         0,
+         0
+        ],
+        "size": 0,
+        "allocated": 0,
+        "fragmentation": 0,
+        "self_healed": 0,
+        "configured_ashift": 12,
+        "logical_ashift": 9,
+        "physical_ashift": 12
+       },
+       "children": [],
+       "device": "da41p2",
+       "disk": "da41",
+       "unavail_disk": null
+      },
+      {
+       "type": "DISK",
+       "path": "/dev/gptid/ab2857a4-805f-11ec-ba03-00155d1e2398",
+       "guid": "3960489549406230178",
+       "status": "ONLINE",
+       "stats": {
+        "timestamp": 219504119469575,
+        "read_errors": 0,
+        "write_errors": 0,
+        "checksum_errors": 0,
+        "ops": [
+         0,
+         686338,
+         2586401,
+         0,
+         0,
+         0,
+         0
+        ],
+        "bytes": [
+         0,
+         10538278912,
+         108951044096,
+         0,
+         0,
+         0,
+         0
+        ],
+        "size": 0,
+        "allocated": 0,
+        "fragmentation": 0,
+        "self_healed": 0,
+        "configured_ashift": 12,
+        "logical_ashift": 9,
+        "physical_ashift": 12
+       },
+       "children": [],
+       "device": "da40p2",
+       "disk": "da40",
+       "unavail_disk": null
+      },
+      {
+       "type": "DISK",
+       "path": "/dev/gptid/ab7c129c-805f-11ec-ba03-00155d1e2398",
+       "guid": "967669805683744490",
+       "status": "ONLINE",
+       "stats": {
+        "timestamp": 219504119500075,
+        "read_errors": 0,
+        "write_errors": 0,
+        "checksum_errors": 0,
+        "ops": [
+         0,
+         686526,
+         2584955,
+         0,
+         0,
+         0,
+         0
+        ],
+        "bytes": [
+         0,
+         10583429120,
+         108955144192,
+         0,
+         0,
+         0,
+         0
+        ],
+        "size": 0,
+        "allocated": 0,
+        "fragmentation": 0,
+        "self_healed": 0,
+        "configured_ashift": 12,
+        "logical_ashift": 9,
+        "physical_ashift": 12
+       },
+       "children": [],
+       "device": "da39p2",
+       "disk": "da39",
+       "unavail_disk": null
+      }
+     ],
+     "unavail_disk": null
+    },
+    {
+     "type": "RAIDZ1",
+     "path": null,
+     "guid": "14319276947950832718",
+     "status": "ONLINE",
+     "stats": {
+      "timestamp": 219504119616875,
+      "read_errors": 0,
+      "write_errors": 0,
+      "checksum_errors": 0,
+      "ops": [
+       0,
+       2090699,
+       7754271,
+       0,
+       0,
+       0,
+       0
+      ],
+      "bytes": [
+       0,
+       32449888256,
+       330681470976,
+       0,
+       0,
+       0,
+       0
+      ],
+      "size": 1640677507072,
+      "allocated": 128860233728,
+      "fragmentation": 1,
+      "self_healed": 0,
+      "configured_ashift": 12,
+      "logical_ashift": 9,
+      "physical_ashift": 12
+     },
+     "children": [
+      {
+       "type": "DISK",
+       "path": "/dev/gptid/c68a513c-8068-11ec-ba03-00155d1e2398",
+       "guid": "15639398611726226696",
+       "status": "ONLINE",
+       "stats": {
+        "timestamp": 219504119658875,
+        "read_errors": 0,
+        "write_errors": 0,
+        "checksum_errors": 0,
+        "ops": [
+         0,
+         696833,
+         2584635,
+         0,
+         0,
+         0,
+         0
+        ],
+        "bytes": [
+         0,
+         10812235776,
+         110227542016,
+         0,
+         0,
+         0,
+         0
+        ],
+        "size": 0,
+        "allocated": 0,
+        "fragmentation": 0,
+        "self_healed": 0,
+        "configured_ashift": 12,
+        "logical_ashift": 9,
+        "physical_ashift": 12
+       },
+       "children": [],
+       "device": "da42p2",
+       "disk": "da42",
+       "unavail_disk": null
+      },
+      {
+       "type": "DISK",
+       "path": "/dev/gptid/c6e1e571-8068-11ec-ba03-00155d1e2398",
+       "guid": "2257222040030313509",
+       "status": "ONLINE",
+       "stats": {
+        "timestamp": 219504119684575,
+        "read_errors": 0,
+        "write_errors": 0,
+        "checksum_errors": 0,
+        "ops": [
+         0,
+         697243,
+         2585049,
+         0,
+         0,
+         0,
+         0
+        ],
+        "bytes": [
+         0,
+         10829152256,
+         110224121856,
+         0,
+         0,
+         0,
+         0
+        ],
+        "size": 0,
+        "allocated": 0,
+        "fragmentation": 0,
+        "self_healed": 0,
+        "configured_ashift": 12,
+        "logical_ashift": 9,
+        "physical_ashift": 12
+       },
+       "children": [],
+       "device": "da44p2",
+       "disk": "da44",
+       "unavail_disk": null
+      },
+      {
+       "type": "DISK",
+       "path": "/dev/gptid/c6ee4220-8068-11ec-ba03-00155d1e2398",
+       "guid": "17050898196361742410",
+       "status": "ONLINE",
+       "stats": {
+        "timestamp": 219504119714975,
+        "read_errors": 0,
+        "write_errors": 0,
+        "checksum_errors": 0,
+        "ops": [
+         0,
+         696623,
+         2584587,
+         0,
+         0,
+         0,
+         0
+        ],
+        "bytes": [
+         0,
+         10808500224,
+         110229807104,
+         0,
+         0,
+         0,
+         0
+        ],
+        "size": 0,
+        "allocated": 0,
+        "fragmentation": 0,
+        "self_healed": 0,
+        "configured_ashift": 12,
+        "logical_ashift": 9,
+        "physical_ashift": 12
+       },
+       "children": [],
+       "device": "da43p2",
+       "disk": "da43",
+       "unavail_disk": null
+      }
+     ],
+     "unavail_disk": null
+    },
+    {
+     "type": "RAIDZ1",
+     "path": null,
+     "guid": "14491763535490569729",
+     "status": "ONLINE",
+     "stats": {
+      "timestamp": 219504119830875,
+      "read_errors": 0,
+      "write_errors": 0,
+      "checksum_errors": 0,
+      "ops": [
+       0,
+       1965340,
+       7641445,
+       0,
+       0,
+       0,
+       0
+      ],
+      "bytes": [
+       0,
+       30230507520,
+       322723647488,
+       0,
+       0,
+       0,
+       0
+      ],
+      "size": 1640677507072,
+      "allocated": 118862651392,
+      "fragmentation": 1,
+      "self_healed": 0,
+      "configured_ashift": 12,
+      "logical_ashift": 9,
+      "physical_ashift": 12
+     },
+     "children": [
+      {
+       "type": "DISK",
+       "path": "/dev/gptid/88d96cf2-806d-11ec-ba03-00155d1e2398",
+       "guid": "6156370785824997426",
+       "status": "ONLINE",
+       "stats": {
+        "timestamp": 219504119868475,
+        "read_errors": 0,
+        "write_errors": 0,
+        "checksum_errors": 0,
+        "ops": [
+         0,
+         655251,
+         2546913,
+         0,
+         0,
+         0,
+         0
+        ],
+        "bytes": [
+         0,
+         10085023744,
+         107576881152,
+         0,
+         0,
+         0,
+         0
+        ],
+        "size": 0,
+        "allocated": 0,
+        "fragmentation": 0,
+        "self_healed": 0,
+        "configured_ashift": 12,
+        "logical_ashift": 9,
+        "physical_ashift": 12
+       },
+       "children": [],
+       "device": "da45p2",
+       "disk": "da45",
+       "unavail_disk": null
+      },
+      {
+       "type": "DISK",
+       "path": "/dev/gptid/891116da-806d-11ec-ba03-00155d1e2398",
+       "guid": "13564416949390745106",
+       "status": "ONLINE",
+       "stats": {
+        "timestamp": 219504119829475,
+        "read_errors": 0,
+        "write_errors": 0,
+        "checksum_errors": 0,
+        "ops": [
+         0,
+         655167,
+         2548604,
+         0,
+         0,
+         0,
+         0
+        ],
+        "bytes": [
+         0,
+         10055708672,
+         107572514816,
+         0,
+         0,
+         0,
+         0
+        ],
+        "size": 0,
+        "allocated": 0,
+        "fragmentation": 0,
+        "self_healed": 0,
+        "configured_ashift": 12,
+        "logical_ashift": 9,
+        "physical_ashift": 12
+       },
+       "children": [],
+       "device": "da46p2",
+       "disk": "da46",
+       "unavail_disk": null
+      },
+      {
+       "type": "DISK",
+       "path": "/dev/gptid/891b7f2c-806d-11ec-ba03-00155d1e2398",
+       "guid": "7279133706141819475",
+       "status": "ONLINE",
+       "stats": {
+        "timestamp": 219504119855975,
+        "read_errors": 0,
+        "write_errors": 0,
+        "checksum_errors": 0,
+        "ops": [
+         0,
+         654922,
+         2545928,
+         0,
+         0,
+         0,
+         0
+        ],
+        "bytes": [
+         0,
+         10089775104,
+         107574251520,
+         0,
+         0,
+         0,
+         0
+        ],
+        "size": 0,
+        "allocated": 0,
+        "fragmentation": 0,
+        "self_healed": 0,
+        "configured_ashift": 12,
+        "logical_ashift": 9,
+        "physical_ashift": 12
+       },
+       "children": [],
+       "device": "da47p2",
+       "disk": "da47",
+       "unavail_disk": null
+      }
+     ],
+     "unavail_disk": null
+    }
+   ],
+   "log": [],
+   "cache": [],
+   "spare": [],
+   "special": [],
+   "dedup": []
+  },
+  "healthy": true,
+  "status_detail": null,
+  "autotrim": {
+   "value": "off",
+   "rawvalue": "off",
+   "parsed": "off",
+   "source": "DEFAULT"
+  },
+  "encryptkey_path": null,
+  "is_decrypted": true
+ },
+ {
+  "id": 22,
+  "name": "MVDRaidZPool",
+  "guid": "14988808093924132965",
+  "encrypt": 0,
+  "encryptkey": "",
+  "path": "/mnt/MVDRaidZPool",
+  "status": "ONLINE",
+  "scan": {
+   "function": "SCRUB",
+   "state": "FINISHED",
+   "start_time": {
+    "$date": 1643529605000
+   },
+   "end_time": {
+    "$date": 1643530049000
+   },
+   "percentage": 0.0,
+   "bytes_to_process": 108593790976,
+   "bytes_processed": 108590612480,
+   "bytes_issued": 0,
+   "pause": null,
+   "errors": 0,
+   "total_secs_left": null
+  },
+  "topology": {
+   "data": [
+    {
+     "type": "RAIDZ1",
+     "path": null,
+     "guid": "14061392167700101490",
+     "status": "ONLINE",
+     "stats": {
+      "timestamp": 219480346035980,
+      "read_errors": 0,
+      "write_errors": 0,
+      "checksum_errors": 0,
+      "ops": [
+       0,
+       10578,
+       155233,
+       0,
+       0,
+       0,
+       0
+      ],
+      "bytes": [
+       0,
+       67284992,
+       1588019200,
+       0,
+       0,
+       0,
+       0
+      ],
+      "size": 1640677507072,
+      "allocated": 108620439552,
+      "fragmentation": 0,
+      "self_healed": 0,
+      "configured_ashift": 12,
+      "logical_ashift": 9,
+      "physical_ashift": 12
+     },
+     "children": [
+      {
+       "type": "DISK",
+       "path": "/dev/gptid/e3109bea-4a12-11ec-8499-00155d1e2398",
+       "guid": "7278207627176599194",
+       "status": "ONLINE",
+       "stats": {
+        "timestamp": 219480346126780,
+        "read_errors": 0,
+        "write_errors": 0,
+        "checksum_errors": 0,
+        "ops": [
+         0,
+         3608,
+         52116,
+         0,
+         0,
+         0,
+         0
+        ],
+        "bytes": [
+         0,
+         24059904,
+         528625664,
+         0,
+         0,
+         0,
+         0
+        ],
+        "size": 0,
+        "allocated": 0,
+        "fragmentation": 0,
+        "self_healed": 0,
+        "configured_ashift": 12,
+        "logical_ashift": 9,
+        "physical_ashift": 12
+       },
+       "children": [],
+       "device": "da11p2",
+       "disk": "da11",
+       "unavail_disk": null
+      },
+      {
+       "type": "DISK",
+       "path": "/dev/gptid/e34c0d5e-4a12-11ec-8499-00155d1e2398",
+       "guid": "1432979711844969051",
+       "status": "ONLINE",
+       "stats": {
+        "timestamp": 219480346165880,
+        "read_errors": 0,
+        "write_errors": 0,
+        "checksum_errors": 0,
+        "ops": [
+         0,
+         3406,
+         50767,
+         0,
+         0,
+         0,
+         0
+        ],
+        "bytes": [
+         0,
+         22069248,
+         529887232,
+         0,
+         0,
+         0,
+         0
+        ],
+        "size": 0,
+        "allocated": 0,
+        "fragmentation": 0,
+        "self_healed": 0,
+        "configured_ashift": 12,
+        "logical_ashift": 9,
+        "physical_ashift": 12
+       },
+       "children": [],
+       "device": "da9p2",
+       "disk": "da9",
+       "unavail_disk": null
+      },
+      {
+       "type": "DISK",
+       "path": "/dev/gptid/e384197d-4a12-11ec-8499-00155d1e2398",
+       "guid": "11373833663584193446",
+       "status": "ONLINE",
+       "stats": {
+        "timestamp": 219480346204180,
+        "read_errors": 0,
+        "write_errors": 0,
+        "checksum_errors": 0,
+        "ops": [
+         0,
+         3564,
+         52350,
+         0,
+         0,
+         0,
+         0
+        ],
+        "bytes": [
+         0,
+         21155840,
+         529506304,
+         0,
+         0,
+         0,
+         0
+        ],
+        "size": 0,
+        "allocated": 0,
+        "fragmentation": 0,
+        "self_healed": 0,
+        "configured_ashift": 12,
+        "logical_ashift": 9,
+        "physical_ashift": 12
+       },
+       "children": [],
+       "device": "da10p2",
+       "disk": "da10",
+       "unavail_disk": null
+      }
+     ],
+     "unavail_disk": null
+    }
+   ],
+   "log": [],
+   "cache": [],
+   "spare": [],
+   "special": [],
+   "dedup": []
+  },
+  "healthy": true,
+  "status_detail": null,
+  "autotrim": {
+   "value": "off",
+   "rawvalue": "off",
+   "parsed": "off",
+   "source": "DEFAULT"
+  },
+  "encryptkey_path": null,
+  "is_decrypted": true
+ },
+ {
+  "id": 23,
+  "name": "MVDMacProRAIDZPool",
+  "guid": "560312529070220290",
+  "encrypt": 0,
+  "encryptkey": "",
+  "path": "/mnt/MVDMacProRAIDZPool",
+  "status": "ONLINE",
+  "scan": {
+   "function": "SCRUB",
+   "state": "FINISHED",
+   "start_time": {
+    "$date": 1641110405000
+   },
+   "end_time": {
+    "$date": 1641120645000
+   },
+   "percentage": 0.0,
+   "bytes_to_process": 1180823134208,
+   "bytes_processed": 1181101809664,
+   "bytes_issued": 0,
+   "pause": null,
+   "errors": 0,
+   "total_secs_left": null
+  },
+  "topology": {
+   "data": [
+    {
+     "type": "RAIDZ1",
+     "path": null,
+     "guid": "3395000977625456541",
+     "status": "ONLINE",
+     "stats": {
+      "timestamp": 219471069268781,
+      "read_errors": 0,
+      "write_errors": 0,
+      "checksum_errors": 0,
+      "ops": [
+       0,
+       41062,
+       450588,
+       0,
+       0,
+       0,
+       0
+      ],
+      "bytes": [
+       0,
+       212844544,
+       9974775808,
+       0,
+       0,
+       0,
+       0
+      ],
+      "size": 2181843386368,
+      "allocated": 1229987135488,
+      "fragmentation": 3,
+      "self_healed": 0,
+      "configured_ashift": 12,
+      "logical_ashift": 9,
+      "physical_ashift": 12
+     },
+     "children": [
+      {
+       "type": "DISK",
+       "path": "/dev/gptid/1557822d-4b93-11ec-8499-00155d1e2398",
+       "guid": "8078139527960964017",
+       "status": "ONLINE",
+       "stats": {
+        "timestamp": 219471069336081,
+        "read_errors": 0,
+        "write_errors": 0,
+        "checksum_errors": 0,
+        "ops": [
+         0,
+         10592,
+         107747,
+         0,
+         0,
+         0,
+         0
+        ],
+        "bytes": [
+         0,
+         54968320,
+         2548137984,
+         0,
+         0,
+         0,
+         0
+        ],
+        "size": 0,
+        "allocated": 0,
+        "fragmentation": 0,
+        "self_healed": 0,
+        "configured_ashift": 12,
+        "logical_ashift": 9,
+        "physical_ashift": 12
+       },
+       "children": [],
+       "device": "da12p2",
+       "disk": "da12",
+       "unavail_disk": null
+      },
+      {
+       "type": "DISK",
+       "path": "/dev/gptid/15ba9cee-4b93-11ec-8499-00155d1e2398",
+       "guid": "2910499079366676277",
+       "status": "ONLINE",
+       "stats": {
+        "timestamp": 219471069398381,
+        "read_errors": 0,
+        "write_errors": 0,
+        "checksum_errors": 0,
+        "ops": [
+         0,
+         9661,
+         113242,
+         0,
+         0,
+         0,
+         0
+        ],
+        "bytes": [
+         0,
+         50933760,
+         2456555520,
+         0,
+         0,
+         0,
+         0
+        ],
+        "size": 0,
+        "allocated": 0,
+        "fragmentation": 0,
+        "self_healed": 0,
+        "configured_ashift": 12,
+        "logical_ashift": 9,
+        "physical_ashift": 12
+       },
+       "children": [],
+       "device": "da14p2",
+       "disk": "da14",
+       "unavail_disk": null
+      },
+      {
+       "type": "DISK",
+       "path": "/dev/gptid/158fa9c5-4b93-11ec-8499-00155d1e2398",
+       "guid": "18419662758760722120",
+       "status": "ONLINE",
+       "stats": {
+        "timestamp": 219471069607881,
+        "read_errors": 0,
+        "write_errors": 0,
+        "checksum_errors": 0,
+        "ops": [
+         0,
+         10418,
+         116748,
+         0,
+         0,
+         0,
+         0
+        ],
+        "bytes": [
+         0,
+         53477376,
+         2547699712,
+         0,
+         0,
+         0,
+         0
+        ],
+        "size": 0,
+        "allocated": 0,
+        "fragmentation": 0,
+        "self_healed": 0,
+        "configured_ashift": 12,
+        "logical_ashift": 9,
+        "physical_ashift": 12
+       },
+       "children": [],
+       "device": "da13p2",
+       "disk": "da13",
+       "unavail_disk": null
+      },
+      {
+       "type": "DISK",
+       "path": "/dev/gptid/15c8f3ab-4b93-11ec-8499-00155d1e2398",
+       "guid": "590824490238850219",
+       "status": "ONLINE",
+       "stats": {
+        "timestamp": 219471070167281,
+        "read_errors": 0,
+        "write_errors": 0,
+        "checksum_errors": 0,
+        "ops": [
+         0,
+         10391,
+         112851,
+         0,
+         0,
+         0,
+         0
+        ],
+        "bytes": [
+         0,
+         53465088,
+         2422382592,
+         0,
+         0,
+         0,
+         0
+        ],
+        "size": 0,
+        "allocated": 0,
+        "fragmentation": 0,
+        "self_healed": 0,
+        "configured_ashift": 12,
+        "logical_ashift": 9,
+        "physical_ashift": 12
+       },
+       "children": [],
+       "device": "da15p2",
+       "disk": "da15",
+       "unavail_disk": null
+      }
+     ],
+     "unavail_disk": null
+    }
+   ],
+   "log": [],
+   "cache": [],
+   "spare": [],
+   "special": [],
+   "dedup": []
+  },
+  "healthy": true,
+  "status_detail": null,
+  "autotrim": {
+   "value": "off",
+   "rawvalue": "off",
+   "parsed": "off",
+   "source": "DEFAULT"
+  },
+  "encryptkey_path": null,
+  "is_decrypted": true
+ },
+ {
+  "id": 24,
+  "name": "TestPool",
+  "guid": "12692049407869896879",
+  "encrypt": 0,
+  "encryptkey": "",
+  "path": "/mnt/TestPool",
+  "status": "ONLINE",
+  "scan": {
+   "function": "SCRUB",
+   "state": "FINISHED",
+   "start_time": {
+    "$date": 1641715205000
+   },
+   "end_time": {
+    "$date": 1641715206000
+   },
+   "percentage": 0.0,
+   "bytes_to_process": 2646016,
+   "bytes_processed": 2646016,
+   "bytes_issued": 0,
+   "pause": null,
+   "errors": 0,
+   "total_secs_left": null
+  },
+  "topology": {
+   "data": [
+    {
+     "type": "RAIDZ1",
+     "path": null,
+     "guid": "15362793355397294827",
+     "status": "ONLINE",
+     "stats": {
+      "timestamp": 219460060641282,
+      "read_errors": 0,
+      "write_errors": 0,
+      "checksum_errors": 0,
+      "ops": [
+       0,
+       455,
+       403,
+       0,
+       0,
+       0,
+       0
+      ],
+      "bytes": [
+       0,
+       3407872,
+       4939776,
+       0,
+       0,
+       0,
+       0
+      ],
+      "size": 25232932864,
+      "allocated": 2891776,
+      "fragmentation": 0,
+      "self_healed": 0,
+      "configured_ashift": 12,
+      "logical_ashift": 9,
+      "physical_ashift": 12
+     },
+     "children": [
+      {
+       "type": "DISK",
+       "path": "/dev/gptid/3537097b-5471-11ec-8499-00155d1e2398",
+       "guid": "12251996536840938823",
+       "status": "ONLINE",
+       "stats": {
+        "timestamp": 219460060711483,
+        "read_errors": 0,
+        "write_errors": 0,
+        "checksum_errors": 0,
+        "ops": [
+         0,
+         175,
+         139,
+         0,
+         0,
+         0,
+         0
+        ],
+        "bytes": [
+         0,
+         1236992,
+         1650688,
+         0,
+         0,
+         0,
+         0
+        ],
+        "size": 0,
+        "allocated": 0,
+        "fragmentation": 0,
+        "self_healed": 0,
+        "configured_ashift": 12,
+        "logical_ashift": 9,
+        "physical_ashift": 12
+       },
+       "children": [],
+       "device": "da18p2",
+       "disk": "da18",
+       "unavail_disk": null
+      },
+      {
+       "type": "DISK",
+       "path": "/dev/gptid/35504b0d-5471-11ec-8499-00155d1e2398",
+       "guid": "17588154160590974167",
+       "status": "ONLINE",
+       "stats": {
+        "timestamp": 219460060748783,
+        "read_errors": 0,
+        "write_errors": 0,
+        "checksum_errors": 0,
+        "ops": [
+         0,
+         101,
+         131,
+         0,
+         0,
+         0,
+         0
+        ],
+        "bytes": [
+         0,
+         925696,
+         1581056,
+         0,
+         0,
+         0,
+         0
+        ],
+        "size": 0,
+        "allocated": 0,
+        "fragmentation": 0,
+        "self_healed": 0,
+        "configured_ashift": 12,
+        "logical_ashift": 9,
+        "physical_ashift": 12
+       },
+       "children": [],
+       "device": "da16p2",
+       "disk": "da16",
+       "unavail_disk": null
+      },
+      {
+       "type": "DISK",
+       "path": "/dev/gptid/35c84f37-5471-11ec-8499-00155d1e2398",
+       "guid": "1745698173617372201",
+       "status": "ONLINE",
+       "stats": {
+        "timestamp": 219460060813582,
+        "read_errors": 0,
+        "write_errors": 0,
+        "checksum_errors": 0,
+        "ops": [
+         0,
+         179,
+         133,
+         0,
+         0,
+         0,
+         0
+        ],
+        "bytes": [
+         0,
+         1245184,
+         1708032,
+         0,
+         0,
+         0,
+         0
+        ],
+        "size": 0,
+        "allocated": 0,
+        "fragmentation": 0,
+        "self_healed": 0,
+        "configured_ashift": 12,
+        "logical_ashift": 9,
+        "physical_ashift": 12
+       },
+       "children": [],
+       "device": "da17p2",
+       "disk": "da17",
+       "unavail_disk": null
+      }
+     ],
+     "unavail_disk": null
+    }
+   ],
+   "log": [],
+   "cache": [],
+   "spare": [],
+   "special": [],
+   "dedup": []
+  },
+  "healthy": true,
+  "status_detail": null,
+  "autotrim": {
+   "value": "off",
+   "rawvalue": "off",
+   "parsed": "off",
+   "source": "DEFAULT"
+  },
+  "encryptkey_path": null,
+  "is_decrypted": true
+ }
+]
