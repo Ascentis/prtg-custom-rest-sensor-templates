@@ -21,7 +21,9 @@ Example usage of rest.exe utility contained within PRTG to test REST custom sens
 Within PowerShell or Windows cmd, cd until you get to C:\Program Files (x86)\PRTG Network Monitor\Sensor System
 Use the rest.exe contined within that folder in the following way:
 
+```
 .\rest.exe http://<IP Address of TrueNAS>/api/v2.0/pool "..\Custom Sensors\rest\truenas.generic.pool.freespace.template" -customheaders "Authorization:<Your TrueNAS Authorhization token>"
+```
 
 You should see a response like this in the console:
 
