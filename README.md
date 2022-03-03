@@ -12,6 +12,8 @@ TrueNAS monitoring for:
 * Pool free space (percentage)
 * Replication health
 
+## Notes
+
 PRTG custom sensor documentation at: https://www.paessler.com/manuals/prtg/custom_sensors#advanced_sensors
 
 JSONPath online evaluator: https://jsonpath.com
