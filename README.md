@@ -13,6 +13,7 @@ TrueNAS monitoring for:
 * Replication health
 
 PRTG custom sensor documentation at: https://www.paessler.com/manuals/prtg/custom_sensors#advanced_sensors
+
 JSONPath online evaluator: https://jsonpath.com
 
 Example usage of rest.exe utility contained within PRTG to test REST custom sensors:
@@ -24,6 +25,7 @@ Use the rest.exe contined within that folder in the following way:
 
 You should see a response like this in the console:
 
+```json
 {
   "prtg": {
     "result": [
@@ -109,3 +111,4 @@ You should see a response like this in the console:
     ]
   }
 }
+```
