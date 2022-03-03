@@ -20,8 +20,8 @@ JSONPath online evaluator: https://jsonpath.com
 
 Example usage of rest.exe utility contained within PRTG to test REST custom sensors:
 
-Within PowerShell or Windows cmd, cd until you get to C:\Program Files (x86)\PRTG Network Monitor\Sensor System
-Use the rest.exe contined within that folder in the following way:
+Within PowerShell or Windows cmd, cd until you get to ```C:\Program Files (x86)\PRTG Network Monitor\Sensor System```
+Use the ```rest.exe``` contained within that folder in the following way:
 
 ```
 .\rest.exe http://<IP Address of TrueNAS>/api/v2.0/pool "..\Custom Sensors\rest\truenas.generic.pool.freespace.template" -customheaders "Authorization:<Your TrueNAS Authorhization token>"
