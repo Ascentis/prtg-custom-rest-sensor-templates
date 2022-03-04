@@ -1,0 +1,21 @@
+{
+    "prtg": {
+        "description" : {
+            "device": "TrueNAS Appliance",
+            "query": "/api/v2.0/pool/dataset",
+            "comment": "Free space on each TrueNAS filesystem reported as a percentage"
+        },
+        "result": [
+			{                              
+                "value": {
+					$[#0].name : $[?@.name !~ "./"](100 * @.available.parsed / (@.used.parsed + @.available.parsed)),				
+				},				
+				"Unit": "Percent",
+				"Float": 1,
+				"LimitMode": 1,
+				"LimitMinWarning" : 20,
+				"LimitMinError": 10
+            }		
+        ]
+    }
+}

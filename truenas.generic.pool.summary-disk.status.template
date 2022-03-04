@@ -1,0 +1,19 @@
+{
+    "prtg": {
+        "description" : {
+            "device": "TrueNAS Appliance",
+            "query": "/api/v2.0/pool",
+            "comment": "Pool disk health reported as percentage. Anything other than ONLINE reported as 0% health"
+        },
+        "result": [
+			{           
+				"channel": "Disk Health",
+                "value": mean($[*].topology.data[*].children[?(@.type == "DISK")](@.status != "ONLINE" ? 0 : 100)),				
+				"Unit": "Percent",
+				"LimitMode": 1,
+				"LimitMinError": 100,
+				"Float": 1
+            }		
+        ]
+    }
+}

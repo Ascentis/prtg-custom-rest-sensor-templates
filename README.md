@@ -8,11 +8,15 @@ Current collections:
 TrueNAS monitoring for:
 
 * Pool health
-* Pool disks health
-* Pool free space (percentage)
+* Pool disks health (each disk and summary of all disks) ~1
+* Pool free space (percentage free space, "logical" and "physical") ~2
 * Replication health
 
 ## Notes
+
+~1 Disk health sensor creates a subchannel per disk. Please notice that PRTG supports a max of 50 sub channels. Any number of channels over that will cause the sensor to be in a failed state
+
+~2 Physical free space uses metrics from TrueNAS that report snapshot utilization. Logical free space is based on each volume within the pool, which in aggregate appear not to take into account snapshot utilization.
 
 PRTG custom sensor documentation at: https://www.paessler.com/manuals/prtg/custom_sensors#advanced_sensors
 
