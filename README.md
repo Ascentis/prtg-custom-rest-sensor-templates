@@ -26,7 +26,7 @@ PRTG REST custom sensor documentation: https://www.paessler.com/manuals/prtg/res
 
 JSONPath online evaluator: https://jsonpath.com
 
-PRTG has a very useful to test the custom REST template files. This utility makes the specified REST call and the processes the JSON result using it's own JSONPath library with the template specified. This tool uses the same exact logic as PRTG internally so the result of the rest.exe execution will match an execution done from within PRTG vs. the online JSONPath parsing tool which has limited support for how PRTG processes custom REST sensors.
+PRTG has a very useful tool to test the custom REST template files. This utility makes the specified REST call and then processes the JSON result using it's own JSONPath library with the template specified. This tool uses the same logic as PRTG internally so the result of the rest.exe execution will match an execution done from within PRTG vs. the online JSONPath parsing tool which has limited support for how PRTG processes custom REST sensors.
 
 Example usage of rest.exe utility contained within PRTG to test REST custom sensors:
 
