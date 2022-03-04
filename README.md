@@ -18,9 +18,15 @@ TrueNAS monitoring for:
 
 ~2 Physical free space uses metrics from TrueNAS that report snapshot utilization. Logical free space is based on each volume within the pool, which in aggregate appear not to take into account snapshot utilization.
 
-PRTG custom sensor documentation at: https://www.paessler.com/manuals/prtg/custom_sensors#advanced_sensors
+## Resources
+
+PRTG custom sensor documentation: https://www.paessler.com/manuals/prtg/custom_sensors#advanced_sensors
+
+PRTG REST custom sensor documentaiton: https://www.paessler.com/manuals/prtg/rest_custom_sensor#jsonpath
 
 JSONPath online evaluator: https://jsonpath.com
+
+PRTG has a very useful to test the custom REST template files. This utility makes the specified REST call and the processes the JSON result using it's own JSONPath library with the template specified. This tool uses the same exact logic as PRTG internally so the result of the rest.exe execution will match an execution done from within PRTG vs. the online JSONPath parsing tool which has limited support for how PRTG processes custom REST sensors.
 
 Example usage of rest.exe utility contained within PRTG to test REST custom sensors:
 
