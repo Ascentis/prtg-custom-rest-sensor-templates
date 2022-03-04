@@ -7,7 +7,7 @@
         },
         "result": [
 			{                              
-                "value": {
+				"value": {
 					$[#0].name : $[?@.name !~ "./"](100 * @.available.parsed / (@.used.parsed + @.available.parsed)),				
 				},				
 				"Unit": "Percent",

@@ -22,7 +22,7 @@ TrueNAS monitoring for:
 
 PRTG custom sensor documentation: https://www.paessler.com/manuals/prtg/custom_sensors#advanced_sensors
 
-PRTG REST custom sensor documentaiton: https://www.paessler.com/manuals/prtg/rest_custom_sensor#jsonpath
+PRTG REST custom sensor documentation: https://www.paessler.com/manuals/prtg/rest_custom_sensor#jsonpath
 
 JSONPath online evaluator: https://jsonpath.com
 

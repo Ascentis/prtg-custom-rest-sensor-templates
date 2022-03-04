@@ -8,7 +8,7 @@
         "result": [
 			{           
 				"channel": "Disk Health",
-                "value": mean($[*].topology.data[*].children[?(@.type == "DISK")](@.status != "ONLINE" ? 0 : 100)),				
+				"value": mean($[*].topology.data[*].children[?(@.type == "DISK")](@.status != "ONLINE" ? 0 : 100)),				
 				"Unit": "Percent",
 				"LimitMode": 1,
 				"LimitMinError": 100,
