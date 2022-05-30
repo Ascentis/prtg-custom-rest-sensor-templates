@@ -41,6 +41,7 @@ $prtg = [pscustomobject]@{
 }
 
 $volumePrefix = "c:\ClusterStorage\"
+$i = 0 
 $volumes | ForEach-Object {    
     $volumeName = [string]$_      
     $fullVolumeName = $volumePrefix + $volumeName     
@@ -52,7 +53,7 @@ $volumes | ForEach-Object {
         $measure = $filteredDedupJobs | Measure-Object -Property Progress -Average
         $percentComplete = $measure.Average
     } else {
-        $percentComplete = -10        
+        $percentComplete =  -2 - $i++        
     }
 
     $channel = [pscustomobject]@{                                                 
