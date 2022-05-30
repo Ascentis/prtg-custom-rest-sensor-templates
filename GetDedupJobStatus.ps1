@@ -7,16 +7,17 @@ try {
         }         
         
         return $nodes       
-     }
-     $volumes = Invoke-Command -Session $s -ScriptBlock {  
+    }
+    $volumes = Invoke-Command -Session $s -ScriptBlock {  
         $volumes = [pscustomobject]@()
         Get-Volume | Where-Object -Property FileSystem -EQ "CSVFS" | ForEach-Object {            
             $volumes += $_.FileSystemLabel            
         }         
         
         return $volumes       
-     }
-} finally {
+    }
+}
+finally {
     Remove-PSSession $s
 } 
 
@@ -28,8 +29,8 @@ $nodes | ForEach-Object {
             return Get-DedupJob
         }
         $dedupJobs += $jobs
-
-    } finally {
+    }
+    finally {
         Remove-PSSession $s
     }
 }
@@ -52,15 +53,16 @@ $volumes | ForEach-Object {
     if ($filteredDedupJobs.Count -gt 0) {
         $measure = $filteredDedupJobs | Measure-Object -Property Progress -Average
         $percentComplete = $measure.Average
-    } else {
-        $percentComplete =  -2 - $i++        
+    }
+    else {
+        $percentComplete = -2 - $i++        
     }
 
     $channel = [pscustomobject]@{                                                 
         channel = $volumeName;
-        value = $percentComplete;
-        float = 1;            
-        Unit = "Percent";
+        value   = $percentComplete;
+        float   = 1;            
+        Unit    = "Percent";
     }
     $prtg.prtg.result += $channel
 }
